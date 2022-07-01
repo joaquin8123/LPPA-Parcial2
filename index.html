@@ -11,12 +11,14 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <form action="/" class="form-box">
+    <form class="form-box">
         <h1 class="form-title">Login</h1>
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" minlength="3" placeholder="Password" required>
         <button id="button-submit" type="button">Iniciar Sesion</button> 
         <p id="loginError" class="hiddenError">Email y/o contraseña incorrectos</p>
+        <p id="emailError" class="hiddenError">Email incorrecto</p>
     </form>
 </body>
 </html>
+
