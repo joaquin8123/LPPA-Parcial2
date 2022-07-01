@@ -17,7 +17,8 @@ window.onload = function(){
             fetch("https://basic-server-one.vercel.app/login", {
                 method: "post",
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                 },
                 body: JSON.stringify({
                 email: inputEmail.value,
